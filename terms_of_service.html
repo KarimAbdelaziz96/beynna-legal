@@ -3,60 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شروط الاستخدام وإخلاء المسؤولية - تطبيق بيننا</title>
+    <title>شروط الاستخدام - تطبيق بيننا</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #e0e0e0;
-            background-color: #13121C;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+        :root {
+            --bg: #13121C;
+            --card: #211832;
+            --card-border: #3a2a55;
+            --text: #e9e7f0;
+            --muted: #b8b3c7;
+            --accent: #FF4A8E;
+            --accent-soft: rgba(255, 74, 142, 0.15);
+            --gold: #D4AF37;
         }
-        h1, h2 {
-            color: #FFFF4A8E;
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Tajawal', 'Segoe UI', Tahoma, sans-serif;
+            line-height: 1.9;
+            color: var(--text);
+            background: radial-gradient(1200px 600px at 80% -10%, #3d245a 0%, var(--bg) 60%);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 24px 16px;
+            min-height: 100vh;
+        }
+        .wrapper { max-width: 860px; margin: 0 auto; }
+        header { text-align: center; margin: 30px 0 25px; }
+        header .logo {
+            width: 72px; height: 72px; border-radius: 22px;
+            background: linear-gradient(135deg, #FF4A8E, #8A5CF5);
+            display: inline-flex; align-items: center; justify-content: center;
+            font-size: 36px; box-shadow: 0 10px 30px rgba(255,74,142,0.35);
+        }
+        h1 { color: #fff; font-size: 32px; margin: 18px 0 8px; font-weight: 700; }
+        .meta {
+            color: var(--muted); font-size: 14px;
+            background: var(--accent-soft); display: inline-block;
+            padding: 6px 14px; border-radius: 100px;
+            border: 1px solid rgba(255,74,142,0.2);
         }
         .container {
-            background-color: #2C1E3A;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            background: linear-gradient(180deg, var(--card), #1c142b);
+            padding: 32px; border-radius: 24px;
+            border: 1px solid var(--card-border);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+            margin-top: 24px;
         }
-        a {
-            color: #D4AF37;
-            text-decoration: none;
+        h2 {
+            color: var(--accent); font-size: 20px;
+            margin: 32px 0 12px; display: flex; align-items: center; gap: 10px;
+        }
+        h2:first-of-type { margin-top: 8px; }
+        h2::before {
+            content: ''; width: 4px; height: 22px;
+            background: var(--accent); border-radius: 10px; display: inline-block;
+        }
+        p { color: var(--text); margin: 0 0 14px; }
+        strong { color: #fff; }
+        .highlight-box {
+            background: rgba(255,74,142,0.08);
+            border: 1px dashed rgba(255,74,142,0.35);
+            padding: 16px 18px; border-radius: 14px; margin: 16px 0;
+        }
+        .warning-box {
+            background: rgba(212,175,55,0.08);
+            border: 1px solid rgba(212,175,55,0.25);
+            padding: 16px 18px; border-radius: 14px; margin: 16px 0;
+        }
+        ul { padding-right: 20px; margin: 10px 0 20px; }
+        li { margin-bottom: 10px; color: var(--muted); }
+        li strong { color: var(--text); }
+        a { color: var(--accent); text-decoration: none; font-weight: 700; }
+        a:hover { text-decoration: underline; }
+        .links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
+        .link-btn {
+            padding: 10px 18px; border-radius: 12px; font-size: 14px;
+            border: 1px solid var(--card-border); background: rgba(255,255,255,0.04);
+            color: var(--text); text-decoration: none; transition: 0.2s;
+        }
+        .link-btn:hover { background: var(--accent-soft); border-color: var(--accent); }
+        .footer { text-align: center; margin-top: 30px; color: var(--muted); font-size: 13px; }
+        @media (max-width: 600px) {
+            .container { padding: 22px 18px; border-radius: 18px; }
+            h1 { font-size: 26px; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>شروط الاستخدام وإخلاء المسؤولية</h1>
-        <p><strong>تاريخ الإصدار:</strong> سبتمبر 2026</p>
-        
-        <h2>1. الفئة العمرية (Content Rating)</h2>
-        <p>هذا التطبيق مخصص للبالغين فقط <strong>(18+ عاماً)</strong>، وهو مصمم حصرياً للمتزوجين. بتنزيلك واستخدامك للتطبيق، فإنك تقر بأن عمرك يتجاوز 18 عاماً وأنك تستخدم التطبيق في إطار العلاقة الزوجية.</p>
+    <div class="wrapper">
+        <header>
+            <div class="logo">📜</div>
+            <h1>شروط الاستخدام وإخلاء المسؤولية</h1>
+            <div class="meta">تطبيق بيننا - آخر تحديث: سبتمبر 2026</div>
+        </header>
 
-        <h2>2. سياسة المحتوى وإخلاء المسؤولية</h2>
-        <p>يحتوي التطبيق على تلميحات ومحتوى رومانسي/جريء يهدف إلى تعزيز وتقوية العلاقة بين الزوجين. 
-        <br><br>
-        <strong>إخلاء مسؤولية:</strong> المطور غير مسؤول قانونياً أو أخلاقياً عن أي أضرار مادية، نفسية، أو جسدية، أو أي تصرفات تنتج عن استخدام الألعاب والتحديات الموجودة في التطبيق. يتحمل المستخدمون المسؤولية الكاملة عن أي أفعال يقومون بها. يُرجى ممارسة التطبيق بمسؤولية وبموافقة كاملة من الطرفين.</p>
+        <div class="container">
+            <h2>1. الفئة العمرية</h2>
+            <div class="warning-box">
+                <p style="margin:0">هذا التطبيق مخصص للبالغين فقط <strong>(18+ عاماً)</strong>، وهو مصمم حصرياً للمتزوجين. بتنزيلك واستخدامك للتطبيق، فإنك تقر بأن عمرك يتجاوز 18 عاماً وأنك تستخدم التطبيق في إطار العلاقة الزوجية الشرعية.</p>
+            </div>
 
-        <h2>3. الاشتراكات الشهرية والمدفوعات</h2>
-        <p>تطبيق "بيننا" يقدم ميزات إضافية ووصولاً غير محدود عبر نظام <strong>الاشتراكات الشهرية</strong> (Auto-Renewable Subscriptions).</p>
-        <ul>
-            <li>سيتم فرض الدفع على حسابك في Google Play أو Apple App Store عند تأكيد الشراء.</li>
-            <li>يتجدد الاشتراك تلقائياً ما لم يتم إيقاف التجديد التلقائي قبل 24 ساعة على الأقل من نهاية الفترة الحالية.</li>
-            <li>سيتم تحميل الحساب رسوم التجديد خلال 24 ساعة قبل نهاية الفترة الحالية، مع تحديد تكلفة التجديد.</li>
-            <li>يمكن للمستخدم إدارة الاشتراكات وإيقاف التجديد التلقائي بالانتقال إلى إعدادات الحساب في المتجر بعد الشراء.</li>
-            <li>لا يُسمح بإلغاء الاشتراك الحالي خلال فترة الاشتراك الفعالة، ولكن يمكن إلغاء التجديد للفترات القادمة.</li>
-        </ul>
-        
-        <h2>4. التعديل على الشروط</h2>
-        <p>نحتفظ بالحق في تعديل شروط الاستخدام هذه في أي وقت. سيتم نشر التغييرات في هذه الصفحة، ويُعد استمرارك في استخدام التطبيق موافقة منك على الشروط المعدلة.</p>
+            <h2>2. سياسة المحتوى وإخلاء المسؤولية</h2>
+            <p>يحتوي التطبيق على أسئلة وتلميحات وتحديات رومانسية وجريئة تهدف إلى تعزيز وتقوية العلاقة والتواصل بين الزوجين.</p>
+            <p><strong>إخلاء مسؤولية:</strong> المطور غير مسؤول قانونياً أو أخلاقياً عن أي أضرار مادية، نفسية، أو جسدية، أو أي تصرفات تنتج عن استخدام الألعاب والتحديات الموجودة في التطبيق. يتحمل المستخدمون المسؤولية الكاملة عن أي أفعال يقومون بها.</p>
+            <p>يُرجى ممارسة التطبيق بمسؤولية، باحترام متبادل، وبموافقة كاملة وصريحة من الطرفين. جميع الأنشطة اختيارية تماماً.</p>
 
-        <h2>5. التواصل معنا</h2>
-        <p>لأي أسئلة أو استفسارات، يمكنك التواصل معنا عبر: <a href="mailto:me@Karimabdelaziz.Me">me@Karimabdelaziz.Me</a></p>
+            <h2>3. الاشتراكات والمدفوعات</h2>
+            <p>تطبيق "بيننا" يقدم ميزات إضافية ووصولاً غير محدود عبر نظام <strong>الاشتراكات المتجددة تلقائياً</strong> (Auto-Renewable Subscriptions).</p>
+            <ul>
+                <li><strong>الدفع:</strong> سيتم فرض الدفع على حسابك في Google Play أو Apple App Store عند تأكيد الشراء.</li>
+                <li><strong>التجديد التلقائي:</strong> يتجدد الاشتراك تلقائياً ما لم يتم إيقاف التجديد التلقائي قبل 24 ساعة على الأقل من نهاية الفترة الحالية.</li>
+                <li><strong>رسوم التجديد:</strong> سيتم خصم رسوم التجديد من حسابك خلال 24 ساعة قبل نهاية الفترة الحالية، مع توضيح تكلفة التجديد.</li>
+                <li><strong>إدارة الاشتراك:</strong> يمكنك إدارة اشتراكاتك وإيقاف التجديد التلقائي في أي وقت بالانتقال إلى إعدادات حسابك في المتجر بعد الشراء: <br><em>Google Play: الإعدادات > المدفوعات والاشتراكات > الاشتراكات</em></li>
+                <li><strong>الإلغاء:</strong> لا يُسمح بإلغاء الاشتراك الحالي خلال فترة الاشتراك الفعالة، ولكن يمكنك إلغاء التجديد للفترات القادمة. أي فترة غير مستخدمة من النسخة التجريبية المجانية، إن وجدت، سيتم مصادرتها عند شراء الاشتراك.</li>
+                <li><strong>الاسترداد:</strong> تتم معالجة جميع عمليات استرداد المبالغ عبر Google Play أو Apple App Store وفقاً لسياساتهم الخاصة، وليس عبر المطور مباشرة.</li>
+            </ul>
+
+            <h2>4. حقوق الملكية الفكرية</h2>
+            <p>جميع محتويات التطبيق (الأسئلة، التصميمات، الأكواد، الشعارات) هي ملكية فكرية خاصة بتطبيق "بيننا" ومحمية بقوانين حقوق النشر. لا يجوز نسخ أو إعادة نشر أو بيع أي جزء من المحتوى دون إذن كتابي مسبق.</p>
+
+            <h2>5. التعديل على الشروط</h2>
+            <p>نحتفظ بالحق في تعديل شروط الاستخدام هذه في أي وقت. سيتم نشر التغييرات في هذه الصفحة مع تحديث تاريخ الإصدار، ويُعد استمرارك في استخدام التطبيق بعد التعديلات موافقة منك على الشروط المعدلة. ننصحك بمراجعة هذه الصفحة دورياً.</p>
+
+            <h2>6. القانون الحاكم</h2>
+            <p>تخضع هذه الشروط وتفسر وفقاً للقوانين المعمول بها، وأي نزاع ينشأ عن استخدام التطبيق يتم حله ودياً أولاً، ثم عبر الجهات المختصة.</p>
+
+            <h2>7. التواصل معنا</h2>
+            <p>لأي أسئلة أو استفسارات حول شروط الاستخدام، يمكنك التواصل معنا عبر:</p>
+            <p><a href="mailto:me@Karimabdelaziz.Me">me@Karimabdelaziz.Me</a></p>
+
+            <div class="links">
+                <a class="link-btn" href="https://karimabdelaziz96.github.io/beynna-legal/privacy_policy.html">📄 سياسة الخصوصية</a>
+                <a class="link-btn" href="mailto:me@Karimabdelaziz.Me">✉️ الدعم الفني</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 تطبيق بيننا - صُمم بحب للمتزوجين فقط</p>
+        </div>
     </div>
 </body>
 </html>
