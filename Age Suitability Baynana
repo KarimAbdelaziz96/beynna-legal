@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الملاءمة العمرية - تطبيق بيننا</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #13121C; --card: #211832; --card-border: #3a2a55;
+            --text: #e9e7f0; --muted: #b8b3c7; --accent: #FF4A8E;
+            --accent-soft: rgba(255, 74, 142, 0.15);
+        }
+        *{box-sizing:border-box}
+        body{
+            font-family:'Tajawal','Segoe UI',Tahoma,sans-serif;
+            line-height:1.9; color:var(--text);
+            background: radial-gradient(1200px 600px at 80% -10%, #3d245a 0%, var(--bg) 60%);
+            background-color:var(--bg); margin:0; padding:24px 16px; min-height:100vh;
+        }
+        .wrapper{max-width:860px;margin:0 auto}
+        header{text-align:center;margin:30px 0 25px}
+        header .logo{
+            width:72px;height:72px;border-radius:22px;
+            background: linear-gradient(135deg, #FF4A8E, #8A5CF5);
+            display:inline-flex;align-items:center;justify-content:center;
+            font-size:36px;box-shadow:0 10px 30px rgba(255,74,142,0.35);
+        }
+        h1{color:#fff;font-size:30px;margin:18px 0 8px;font-weight:700}
+        .badge{
+            display:inline-flex;align-items:center;gap:8px;
+            background:#ff4a8e;color:#fff;font-weight:700;
+            padding:8px 18px;border-radius:100px;font-size:16px;
+            box-shadow:0 6px 20px rgba(255,74,142,0.4);
+        }
+        .container{
+            background: linear-gradient(180deg, var(--card), #1c142b);
+            padding:32px;border-radius:24px;border:1px solid var(--card-border);
+            box-shadow:0 20px 50px rgba(0,0,0,0.4);margin-top:24px;
+        }
+        h2{color:var(--accent);font-size:20px;margin:32px 0 12px;display:flex;align-items:center;gap:10px}
+        h2:first-of-type{margin-top:8px}
+        h2::before{content:'';width:4px;height:22px;background:var(--accent);border-radius:10px;display:inline-block}
+        p{color:var(--text);margin:0 0 14px}
+        strong{color:#fff}
+        .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+        .card{
+            background:rgba(255,255,255,0.04);border:1px solid var(--card-border);
+            padding:16px;border-radius:14px;
+        }
+        .card h3{margin:0 0 6px;color:#fff;font-size:16px}
+        .card p{margin:0;color:var(--muted);font-size:14px}
+        ul{padding-right:20px;margin:10px 0 20px}
+        li{margin-bottom:10px;color:var(--muted)} li strong{color:var(--text)}
+        a{color:var(--accent);text-decoration:none;font-weight:700}
+        .footer{text-align:center;margin-top:30px;color:var(--muted);font-size:13px}
+        @media(max-width:600px){.container{padding:22px 18px;border-radius:18px}.grid{grid-template-columns:1fr}h1{font-size:26px}}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">🔞</div>
+            <h1>الملاءمة العمرية</h1>
+            <div class="badge">18+ للمتزوجين فقط</div>
+        </header>
+
+        <div class="container">
+            <h2>نظرة عامة</h2>
+            <p>تطبيق <strong>"بيننا - Beynna"</strong> هو تطبيق ترفيهي وتعليمي مصمم حصرياً لتعزيز التواصل والعلاقة الحميمة بين الأزواج في إطار الزواج الشرعي.</p>
+            <p>لذلك تم تصنيف التطبيق <strong>للبالغين فقط (18+)</strong> في متاجر التطبيقات (Google Play / App Store).</p>
+
+            <h2>لماذا 18+ ؟</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>💬 محتوى رومانسي جريء</h3>
+                    <p>يحتوي على أسئلة وتحديات حميمة مخصصة للمتزوجين قد لا تكون مناسبة للقصر.</p>
+                </div>
+                <div class="card">
+                    <h3>🔒 خصوصية زوجية</h3>
+                    <p>يهدف لخلق مساحة آمنة وخاصة بين الزوجين فقط، وليس للمواعدة أو التعارف.</p>
+                </div>
+                <div class="card">
+                    <h3>🚫 لا محتوى إباحي</h3>
+                    <p>لا يحتوي التطبيق على صور عارية، فيديوهات جنسية، أو محتوى إباحي صريح. المحتوى نصي تلميحي فقط.</p>
+                </div>
+                <div class="card">
+                    <h3>✅ بالتراضي</h3>
+                    <p>جميع الأنشطة اختيارية وتتطلب موافقة الطرفين، مع إمكانية التخطي في أي وقت.</p>
+                </div>
+            </div>
+
+            <h2>التزاماتنا</h2>
+            <ul>
+                <li><strong>لا مواعدة:</strong> التطبيق ليس تطبيق مواعدة، ولا يربط بين غرباء.</li>
+                <li><strong>لا محتوى للمستخدمين:</strong> لا يمكن للمستخدمين رفع صور أو محتوى خاص.</li>
+                <li><strong>لا إعلانات غير مناسبة:</strong> لا نعرض إعلانات خارجية قد تحتوي على محتوى غير مناسب.</li>
+                <li><strong>قفل اختياري:</strong> يمكن حماية التطبيق برمز سري أو بصمة لمنع وصول الأطفال.</li>
+            </ul>
+
+            <h2>إرشادات لأولياء الأمور</h2>
+            <p>ننصح باستخدام ميزات الرقابة الأبوية في Google Play و App Store لمنع تثبيت تطبيقات مصنفة 18+. التطبيق لا يجمع أي بيانات عن الأطفال ولا يستهدفهم بأي شكل.</p>
+
+            <h2>التصنيف في المتاجر</h2>
+            <p>
+                <strong>Google Play:</strong> Mature 18+ - Sexual Content (Suggestive) - Context is married couples<br>
+                <strong>Apple App Store:</strong> 17+ - Frequent/Mild Sexual Content and Nudity (Text-based, suggestive)
+            </p>
+
+            <p style="margin-top:20px">للمزيد، راجع: <a href="https://karimabdelaziz96.github.io/beynna-legal/privacy_policy.html">سياسة الخصوصية</a> و <a href="https://karimabdelaziz96.github.io/beynna-legal/terms_of_service.html">شروط الاستخدام</a></p>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 تطبيق بيننا - صُمم بحب للمتزوجين فقط - 18+</p>
+        </div>
+    </div>
+</body>
+</html>
